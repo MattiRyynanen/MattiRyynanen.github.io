@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+
+<title>Accompaniment Separation and Karaoke Application Based on
+ Automatic Melody Transcription, examples</title> 
+<link rel="stylesheet" type="text/css"
+href="../../mattistyle.css" /> 
+</head> 
+
+<body>
+
+<h2>Accompaniment Separation and Karaoke Application Based on
+ Automatic Melody Transcription, examples</h2>
+
+<p>
+Author: Matti Ryyn&auml;nen,
+<a href="../../research.html">homepage</a>
+<br />
+<!-- hhmts start --> Last modified: March 2008 <!-- hhmts end -->
+</p>
+
+<p><small>
+M. Ryyn&auml;nen, T. Virtanen, J. Paulus, and A. Klapuri,
+"Accompaniment Separation and Karaoke Application Based on Automatic
+Melody Transcription," in <i>Proc. 2008 IEEE International Conference
+on Multimedia & Expo (ICME'08)</i>, Hannover, Germany, June 2008.
+</small></p>
+
+<p>
+We propose a method for separating accompaniment from polyphonic music
+and its karaoke application, both based on automatic melody
+transcription.  First, the method transcribes the lead-vocal melody of
+an existing polyphonic music piece, where the transcription consists
+of a MIDI note sequence and detailed fundamental frequency (F0)
+trajectory for each note.  Based on the note F0 trajectories, the
+method uses sinusoidal modeling to estimate, synthesize, and remove
+the lead vocals in the piece, thus producing separated accompaniment
+of the piece.
+</p>
+<p>
+User sings along with the separated accompaniment
+similar to karaoke while the user singing can be tuned to the
+transcribed melody. This will help non-professional singers to produce
+more appealing karaoke performances.  The quality of separated
+accompaniments was quantitatively evaluated with approximately one
+hour of polyphonic music, including material from a commercial karaoke
+DVD.
+</p>
+
+<h3>Example from Evaluation</h3>
+
+Song with vocals <a href="lopeta_orig.wav.mp3">mp3</a>, i.e., the
+input signal for the method.<br>
+Estimated vocals in the input signal <a href="lopeta_sepvoc.wav.mp3">mp3</a>.<br>
+Separated accompaniment <a href="lopeta_sepbg.wav.mp3">mp3</a>. This is
+the output of the method, produced by removing the estimated vocals
+from the input.<br>
+Original karaoke version <a href="lopeta_refbg.wav.mp3">mp3</a>. The
+separated accompaniment is compared with this signal for evaluation.
+
+<h3>Accompaniment Separation Examples on Commercial Recordings</h3>
+
+<p>
+The following examples demonstrate the accompaniment
+separation on audio clips from commercial music recordings. The method
+takes the original song as an input and produces the separated
+accompaniment as an output, i.e., a version where the lead vocal
+melody has been suppressed.
+</p>
+
+<hr \>
+
+<table>
+<colgroup span="3">
+<col width="300"></col>
+<col width="100"></col>
+<col width="100"></col>
+</colgroup>
+<tr><td>Song</td><td>Original song (input)</td><td>Separated
+accompaniment (output)</td></tr>
+<tr><td>Audioslave: Shadow on the Sun</td><td><a href="audioslave_shadow_orig.mp3">mp3</a> </td> <td><a href="audioslave_shadow_bg.mp3">mp3</a></td></tr>
+<tr><td>Gary Barlow: Love Won't Wait</td> <td><a href="gary_barlow_orig.mp3">mp3</a></td> <td><a href="gary_barlow_bg.mp3">mp3</a></td> </tr>
+<tr><td>Dredg: 18 People Live in Harmony</td> <td><a href="dredg_orig.mp3">mp3</a></td> <td><a href="dredg_bg.mp3">mp3</a></td> </tr>
+<tr><td>Jamiroquai: When You Gonna Learn</td> <td><a href="jamiroquai_learn_orig.mp3">mp3</a></td> <td><a href="jamiroquai_learn_bg.mp3">mp3</a></td> </tr>
+<tr><td>Laura Pausini: Surrender</td> <td><a href="pausini_surrender_orig.mp3">mp3</a></td> <td><a href="pausini_surrender_bg.mp3">mp3</a></td> </tr>
+<tr><td>Kelly Rowland: Stole</td> <td><a href="kelly-rowland_stole_orig.mp3">mp3</a></td> <td><a href="kelly-rowland_stole_bg.mp3">mp3</a></td> </tr>
+<tr><td>Roxette: It Must Have Been Love</td> <td><a href="roxette_orig.mp3">mp3</a></td> <td><a href="roxette_bg.mp3">mp3</a></td> </tr>
+<tr><td>Rush: Ghost Rider</td> <td><a href="rush_ghost_rider_orig.mp3">mp3</a></td> <td><a href="rush_ghost_rider_bg.mp3">mp3</a></td> </tr>
+<tr><td>Tool: Pot</td> <td><a href="tool_pot_orig.mp3">mp3</a></td> <td><a href="tool_pot_bg.mp3">mp3</a></td> </tr>
+<tr><td>Verve: Bitter Sweet Symphony</td> <td><a href="verve_bitter_orig.mp3">mp3</a></td> <td><a href="verve_bitter_bg.mp3">mp3</a></td> </tr>
+</table>
+
+<hr \>
+
+<h3>Example Video of the Karaoke Application</h3>
+
+<p>
+The video 
+<a href="sk_ego_video.wmv">(wmv, 4.8 MB)</a> illustrates a prototype of the
+karaoke application. The user sings along with the separated
+accompaniment and the user pitch is illustrated with the green
+line. The red line shows the melody transcribed from the original
+recording. The user singing can be tuned to the exact pitch of the
+original melody, or to the nearest octave to avoid unnatural (over one
+octave) pitch shifts.
+</p>
+
+</body>
+</html>
