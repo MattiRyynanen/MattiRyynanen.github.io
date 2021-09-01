@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+
+<title>Query by Humming of MIDI and Audio Using Locality Sensitive
+Hashing, examples</title><link rel="stylesheet" type="text/css"
+href="../../mattistyle.css" /> </head> <body>
+
+<h2>Query by Humming of MIDI and Audio Using Locality Sensitive
+Hashing, audio retrieval examples</h2>
+
+<p>
+Author: Matti Ryyn&auml;nen,
+<a href="../../research.html">homepage</a>
+<br />
+<!-- hhmts start --> Last modified: October 2007 <!-- hhmts end -->
+</p>
+
+<p>
+Query by humming (QBH) refers to music information retrieval systems
+where short audio clips of singing or humming act as queries. In a
+normal use case of QBH, a user wants to find a song from a large
+database of music recordings. If the user does not remember the name
+of the artist or the song to make a metadata query, a natural option
+is to sing, hum, or whistle a part of the melody of the song into a
+microphone and let a QBH system to retrieve the song.
+</p>
+
+<h3>Method</h3>
+
+<p>
+<small>
+M. Ryyn&auml;nen and A. Klapuri, "Query by Humming of MIDI and Audio
+Using Locality Sensitive Hashing," in <i>Proc. 2008 IEEE International 
+Conference on Acoustics, Speech, and Signal Processing
+(ICASSP'08)</i>, Las Vegas, Nevada, USA, April 2008.
+</small>
+</p>
+
+<p>
+We propose a query by humming method based on locality sensitive
+hashing (LSH). The method constructs an index of melodic fragments by
+extracting pitch vectors from a database of melodies. In retrieval,
+the method automatically transcribes a sung query into notes and then
+extracts pitch vectors similarly to the index construction. For each
+query pitch vector, the method searches for similar melodic fragments
+in the database to obtain a list of candidate melodies. This is
+performed efficiently by using LSH. The candidate melodies are ranked
+by their distance to the entire query and returned to the user.  To
+retrieve audio signals, we apply an automatic melody transcription
+method to construct the melody database directly from music
+recordings.
+</p>
+
+<h3>QBH of music recordings</h3>
+
+<p>
+The following examples represent QBH of music recordings with the
+proposed method. The method processes the user query and searches for
+similar melody segments in a database of 427 full music pieces. The
+retrieved melody segments are ranked according to their similarity
+with the query. The examples list the top-three retrieved melody
+segments (the correct answer in <b>bold</b> face). In our experiments,
+the correct answer was returned first for 52% of 159 queries and in
+top-three for 58% of the queries. Due to melody transcription errors
+in the database construction, some of the retrieved melody segments
+may sound quite different and surprising to humans.
+</p>
+
+<b>Song searched for: Madonna - Frozen</b>
+<ul>
+<li>User query <a href="query_11.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_11_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_11_retrieved_2.wav.mp3">#2</a> 
+<a href="q_11_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Billy Joel - Honesty</b>
+<ul>
+<li>User query <a href="query_46.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_46_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_46_retrieved_2.wav.mp3">#2</a> 
+<a href="q_46_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: A-Ha - Take On Me</b>
+<ul>
+<li>User query <a href="query_51.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_51_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_51_retrieved_2.wav.mp3">#2</a> 
+<a href="q_51_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: The Cranberries - Zombie</b>
+<ul>
+<li>User query <a href="query_61.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_61_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_61_retrieved_2.wav.mp3">#2</a> 
+<a href="q_61_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Red Hot Chili Peppers - Under the Bridge</b>
+<ul>
+<li>User query <a href="query_72.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_72_retrieved_1.wav.mp3">#1</a> 
+<a href="q_72_retrieved_2.wav.mp3"><b>#2</b></a> 
+<a href="q_72_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: The Rasmus - In the Shadows</b>
+<ul>
+<li>User query <a href="query_141.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_141_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_141_retrieved_2.wav.mp3">#2</a> 
+<a href="q_141_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: The Rasmus - In the Shadows</b>
+<ul>
+<li>User query <a href="query_144.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_144_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_144_retrieved_2.wav.mp3">#2</a> 
+<a href="q_144_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Eagles - Hotel California</b>
+<ul>
+<li>User query <a href="query_5.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_5_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_5_retrieved_2.wav.mp3">#2</a> 
+<a href="q_5_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: The Beatles - Yellow Submarine</b>
+<ul>
+<li>User query <a href="query_24.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_24_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_24_retrieved_2.wav.mp3">#2</a> 
+<a href="q_24_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Roberta Flack - Killing Me Softly (With His Song)</b>
+<ul>
+<li>User query <a href="query_155.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_155_retrieved_1.wav.mp3">#1</a> 
+<a href="q_155_retrieved_2.wav.mp3"><b>#2</b></a> 
+<a href="q_155_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Ace of Base - All That She Wants</b>
+<ul>
+<li>User query <a href="query_87.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_87_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_87_retrieved_2.wav.mp3">#2</a> 
+<a href="q_87_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Bob Dylan - Blowin' In The Wind</b>
+<ul>
+<li>User query <a href="query_106.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_106_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_106_retrieved_2.wav.mp3">#2</a> 
+<a href="q_106_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: Verve - Bitter Sweet Symphony</b>
+<ul>
+<li>User query <a href="query_147.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_147_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_147_retrieved_2.wav.mp3">#2</a> 
+<a href="q_147_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+<b>Song searched for: R.E.M. - Losing My Religion</b>
+<ul>
+<li>User query <a href="query_158.wav.mp3">mp3</a></li>
+<li>Retrieved melody segments in the original recordings: 
+rank <a href="q_158_retrieved_1.wav.mp3"><b>#1</b></a> 
+<a href="q_158_retrieved_2.wav.mp3">#2</a> 
+<a href="q_158_retrieved_3.wav.mp3">#3</a>
+</ul>
+<br />
+
+</body>
+</html>
