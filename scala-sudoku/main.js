@@ -1469,7 +1469,7 @@ function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__runRender$1__Lorg_scalaj
 function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__takeRow$1__I__sci_List__Lscalatags_JsDom$TypedTag($thiz, row, cellViews$1) {
   var this$1 = $m_Lscalatags_JsDom$all$();
   var $$x2 = this$1.tr__Lscalatags_JsDom$TypedTag();
-  var array = [$m_Lscalatags_JsDom$all$().height__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("60px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
+  var array = [$m_Lscalatags_JsDom$all$().height__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("12ex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
   var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
   var this$7 = $m_Lscalatags_JsDom$all$();
   var n = $imul(9, row);
@@ -1515,7 +1515,7 @@ $h_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype = $c_Lcom_mattiryynanen_
 $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.main__AT__V = (function(args) {
   var this$1 = $m_Lscalatags_JsDom$all$();
   var $$x1 = this$1.input__Lscalatags_JsDom$TypedTag();
-  var array = [$m_Lscalatags_JsDom$all$().width__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("720px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($m_Lcom_mattiryynanen_scalasudoku_core_TestPuzzles$().Lcom_mattiryynanen_scalasudoku_core_TestPuzzles$__f_onnensud_78, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+  var array = [$m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($m_Lcom_mattiryynanen_scalasudoku_core_TestPuzzles$().Lcom_mattiryynanen_scalasudoku_core_TestPuzzles$__f_onnensud_78, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
   var box = $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array)).render__Lorg_scalajs_dom_raw_Element();
   var this$5 = $m_Lscalatags_JsDom$all$();
   var output = this$5.div__Lscalatags_JsDom$TypedTag().apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sci_Nil$()).render__Lorg_scalajs_dom_raw_Element();
@@ -1621,24 +1621,22 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.getSudokuTable__Lcom_mat
     var cellViews = h
   };
   var this$4 = $m_Lscalatags_JsDom$all$();
-  var $$x2 = this$4.table__Lscalatags_JsDom$TypedTag();
-  var array = [$m_Lscalatags_JsDom$all$().borderCollapse__Lscalatags_generic_Styles$borderCollapse$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("collapse", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $as_Lscalatags_generic_PixelStyle($m_Lscalatags_JsDom$all$().marginLeft__Lscalatags_generic_StyleMisc$MarginAuto()).$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("auto", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $as_Lscalatags_generic_PixelStyle($m_Lscalatags_JsDom$all$().marginRight__Lscalatags_generic_StyleMisc$MarginAuto()).$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("auto", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
-  var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
-  var this$12 = $m_Lscalatags_JsDom$all$();
-  var this$8 = $m_sci_List$();
+  var $$x1 = this$4.table__Lscalatags_JsDom$TypedTag();
+  var this$9 = $m_Lscalatags_JsDom$all$();
+  var this$5 = $m_sci_List$();
   var evidence$3 = $m_s_math_Numeric$IntIsIntegral$();
-  var this$9 = $as_sci_List($f_sc_IterableFactory__range__O__O__s_math_Integral__O(this$8, 0, 9, evidence$3));
+  var this$6 = $as_sci_List($f_sc_IterableFactory__range__O__O__s_math_Integral__O(this$5, 0, 9, evidence$3));
   var f$1 = ((this$2$1, cellViews$1) => ((x$3$2) => {
     var x$3 = $uI(x$3$2);
     return $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__takeRow$1__I__sci_List__Lscalatags_JsDom$TypedTag(this$2$1, x$3, cellViews$1)
   }))(this, cellViews);
-  if ((this$9 === $m_sci_Nil$())) {
+  if ((this$6 === $m_sci_Nil$())) {
     var xs = $m_sci_Nil$()
   } else {
-    var arg1$2 = this$9.head__O();
+    var arg1$2 = this$6.head__O();
     var h$1 = new $c_sci_$colon$colon(f$1(arg1$2), $m_sci_Nil$());
     var t$1 = h$1;
-    var rest$1 = $as_sci_List(this$9.tail__O());
+    var rest$1 = $as_sci_List(this$6.tail__O());
     while ((rest$1 !== $m_sci_Nil$())) {
       var arg1$3 = rest$1.head__O();
       var nx$1 = new $c_sci_$colon$colon(f$1(arg1$3), $m_sci_Nil$());
@@ -1648,16 +1646,16 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.getSudokuTable__Lcom_mat
     };
     var xs = h$1
   };
-  var this$11 = $m_s_$less$colon$less$();
-  var ev = this$11.s_$less$colon$less$__f_singleton;
-  var array$1 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$12, xs, ev)];
-  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$1))
+  var this$8 = $m_s_$less$colon$less$();
+  var ev = this$8.s_$less$colon$less$__f_singleton;
+  var array = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$9, xs, ev)];
+  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array))
 });
 $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__F1__Lorg_scalajs_dom_raw_HTMLTableCellElement = (function(cell, prevCell, highlight) {
   if (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_givenInitial) {
     var this$1 = $m_Lscalatags_JsDom$all$();
     var $$x2 = this$1.div__Lscalatags_JsDom$TypedTag();
-    var array = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("24px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
+    var array = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
     var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
     $m_Lscalatags_JsDom$all$();
     var v = $uI(cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_candidates.head__O());
@@ -1667,7 +1665,7 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
   } else if (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_isSolved && prevCell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_isSolved) && cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_broadcasted)) {
     var this$10 = $m_Lscalatags_JsDom$all$();
     var $$x4 = this$10.div__Lscalatags_JsDom$TypedTag();
-    var array$2 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("24px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("green", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+    var array$2 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("green", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
     var $$x3 = $$x4.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$2));
     $m_Lscalatags_JsDom$all$();
     var v$2 = $uI(cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_candidates.head__O());
@@ -1677,7 +1675,7 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
   } else {
     var this$19 = $m_Lscalatags_JsDom$all$();
     var $$x12 = this$19.table__Lscalatags_JsDom$TypedTag();
-    var array$4 = [$m_Lscalatags_JsDom$all$().width__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("60px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("grey", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+    var array$4 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3ex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("grey", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
     var $$x11 = $$x12.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$4));
     var this$23 = $m_Lscalatags_JsDom$all$();
     var $$x10 = this$23.tbody__Lscalatags_JsDom$TypedTag();
@@ -1740,7 +1738,7 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
   var this$67 = $m_Lscalatags_JsDom$all$();
   var this$66 = $m_s_$less$colon$less$();
   var ev$3 = this$66.s_$less$colon$less$__f_singleton;
-  var array$11 = [new $c_Lscalatags_generic_Util$SeqNode(this$67, borderStyle, ev$3), $m_Lscalatags_JsDom$all$().width__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("60px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().padding__Lscalatags_generic_PixelStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("0px", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().backgroundColor__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair(bg, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $as_Lscalatags_generic_Style($m_Lscalatags_JsDom$all$().textAlign__Lscalatags_generic_Styles$TextAlign()).$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+  var array$11 = [new $c_Lscalatags_generic_Util$SeqNode(this$67, borderStyle, ev$3), $m_Lscalatags_JsDom$all$().backgroundColor__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair(bg, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $as_Lscalatags_generic_Style($m_Lscalatags_JsDom$all$().textAlign__Lscalatags_generic_Styles$TextAlign()).$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
   var $$x13 = $$x14.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$11));
   var array$12 = [cellContent];
   return $$x13.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$12)).render__Lorg_scalajs_dom_raw_Element()
@@ -18087,16 +18085,6 @@ function $isArrayOf_Lscalatags_generic_PixelStyle(obj, depth) {
 function $asArrayOf_Lscalatags_generic_PixelStyle(obj, depth) {
   return (($isArrayOf_Lscalatags_generic_PixelStyle(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalatags.generic.PixelStyle;", depth))
 }
-var $d_Lscalatags_generic_PixelStyle = new $TypeData().initClass({
-  Lscalatags_generic_PixelStyle: 0
-}, false, "scalatags.generic.PixelStyle", {
-  Lscalatags_generic_PixelStyle: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lscalatags_generic_PixelStyle.prototype.$classData = $d_Lscalatags_generic_PixelStyle;
 function $ct_Lscalatags_generic_Style__T__T__($thiz, jsName, cssName) {
   $thiz.Lscalatags_generic_Style__f_jsName = jsName;
   $thiz.Lscalatags_generic_Style__f_cssName = cssName;
@@ -23432,39 +23420,6 @@ var $d_Lscalatags_generic_StylePair = new $TypeData().initClass({
 });
 $c_Lscalatags_generic_StylePair.prototype.$classData = $d_Lscalatags_generic_StylePair;
 /** @constructor */
-function $c_Lscalatags_generic_Styles$borderCollapse$(outer) {
-  this.Lscalatags_generic_Style__f_jsName = null;
-  this.Lscalatags_generic_Style__f_cssName = null;
-  this.Lscalatags_generic_Styles$borderCollapse$__f_separate = null;
-  this.Lscalatags_generic_Styles$borderCollapse$__f_collapse = null;
-  this.Lscalatags_generic_Styles$borderCollapse$__f_bitmap$0 = 0;
-  this.Lscalatags_generic_Styles$borderCollapse$__f_$outer = null;
-  if ((outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.Lscalatags_generic_Styles$borderCollapse$__f_$outer = outer
-  };
-  $ct_Lscalatags_generic_Style__T__T__(this, "borderCollapse", "border-collapse")
-}
-$c_Lscalatags_generic_Styles$borderCollapse$.prototype = new $h_Lscalatags_generic_Style();
-$c_Lscalatags_generic_Styles$borderCollapse$.prototype.constructor = $c_Lscalatags_generic_Styles$borderCollapse$;
-/** @constructor */
-function $h_Lscalatags_generic_Styles$borderCollapse$() {
-  /*<skip>*/
-}
-$h_Lscalatags_generic_Styles$borderCollapse$.prototype = $c_Lscalatags_generic_Styles$borderCollapse$.prototype;
-var $d_Lscalatags_generic_Styles$borderCollapse$ = new $TypeData().initClass({
-  Lscalatags_generic_Styles$borderCollapse$: 0
-}, false, "scalatags.generic.Styles$borderCollapse$", {
-  Lscalatags_generic_Styles$borderCollapse$: 1,
-  Lscalatags_generic_Style: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lscalatags_generic_Styles$borderCollapse$.prototype.$classData = $d_Lscalatags_generic_Styles$borderCollapse$;
-/** @constructor */
 function $c_Lscalatags_generic_Styles$fontSize$(outer) {
   this.Lscalatags_generic_PixelStyle__f_jsName = null;
   this.Lscalatags_generic_PixelStyle__f_cssName = null;
@@ -24889,74 +24844,6 @@ var $d_s_reflect_ClassTag$GenericClassTag = new $TypeData().initClass({
   s_Equals: 1
 });
 $c_s_reflect_ClassTag$GenericClassTag.prototype.$classData = $d_s_reflect_ClassTag$GenericClassTag;
-/** @constructor */
-function $c_Lscalatags_generic_Styles$$anon$1(outer) {
-  this.Lscalatags_generic_PixelStyle__f_jsName = null;
-  this.Lscalatags_generic_PixelStyle__f_cssName = null;
-  this.Lscalatags_generic_PixelStyle__f_realStyle = null;
-  this.Lscalatags_generic_Styles$$anon$1__f_auto = null;
-  this.Lscalatags_generic_Styles$$anon$1__f_bitmap$0 = false;
-  this.Lscalatags_generic_Styles$$anon$1__f_$outer = null;
-  if ((outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.Lscalatags_generic_Styles$$anon$1__f_$outer = outer
-  };
-  $ct_Lscalatags_generic_PixelStyle__T__T__(this, "marginRight", "margin-right")
-}
-$c_Lscalatags_generic_Styles$$anon$1.prototype = new $h_Lscalatags_generic_PixelStyle();
-$c_Lscalatags_generic_Styles$$anon$1.prototype.constructor = $c_Lscalatags_generic_Styles$$anon$1;
-/** @constructor */
-function $h_Lscalatags_generic_Styles$$anon$1() {
-  /*<skip>*/
-}
-$h_Lscalatags_generic_Styles$$anon$1.prototype = $c_Lscalatags_generic_Styles$$anon$1.prototype;
-var $d_Lscalatags_generic_Styles$$anon$1 = new $TypeData().initClass({
-  Lscalatags_generic_Styles$$anon$1: 0
-}, false, "scalatags.generic.Styles$$anon$1", {
-  Lscalatags_generic_Styles$$anon$1: 1,
-  Lscalatags_generic_PixelStyle: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1,
-  Lscalatags_generic_StyleMisc$MarginAuto: 1
-});
-$c_Lscalatags_generic_Styles$$anon$1.prototype.$classData = $d_Lscalatags_generic_Styles$$anon$1;
-/** @constructor */
-function $c_Lscalatags_generic_Styles$$anon$3(outer) {
-  this.Lscalatags_generic_PixelStyle__f_jsName = null;
-  this.Lscalatags_generic_PixelStyle__f_cssName = null;
-  this.Lscalatags_generic_PixelStyle__f_realStyle = null;
-  this.Lscalatags_generic_Styles$$anon$3__f_auto = null;
-  this.Lscalatags_generic_Styles$$anon$3__f_bitmap$0 = false;
-  this.Lscalatags_generic_Styles$$anon$3__f_$outer = null;
-  if ((outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.Lscalatags_generic_Styles$$anon$3__f_$outer = outer
-  };
-  $ct_Lscalatags_generic_PixelStyle__T__T__(this, "marginLeft", "margin-left")
-}
-$c_Lscalatags_generic_Styles$$anon$3.prototype = new $h_Lscalatags_generic_PixelStyle();
-$c_Lscalatags_generic_Styles$$anon$3.prototype.constructor = $c_Lscalatags_generic_Styles$$anon$3;
-/** @constructor */
-function $h_Lscalatags_generic_Styles$$anon$3() {
-  /*<skip>*/
-}
-$h_Lscalatags_generic_Styles$$anon$3.prototype = $c_Lscalatags_generic_Styles$$anon$3.prototype;
-var $d_Lscalatags_generic_Styles$$anon$3 = new $TypeData().initClass({
-  Lscalatags_generic_Styles$$anon$3: 0
-}, false, "scalatags.generic.Styles$$anon$3", {
-  Lscalatags_generic_Styles$$anon$3: 1,
-  Lscalatags_generic_PixelStyle: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1,
-  Lscalatags_generic_StyleMisc$MarginAuto: 1
-});
-$c_Lscalatags_generic_Styles$$anon$3.prototype.$classData = $d_Lscalatags_generic_Styles$$anon$3;
 /** @constructor */
 function $c_Lscalatags_generic_Styles$$anon$5(outer) {
   this.Lscalatags_generic_Style__f_jsName = null;
@@ -33540,18 +33427,6 @@ function $p_Lscalatags_JsDom$all$__height$lzycompute__Lscalatags_generic_StyleMi
   };
   return $thiz.Lscalatags_JsDom$all$__f_height
 }
-function $p_Lscalatags_JsDom$all$__padding$lzycompute__Lscalatags_generic_PixelStyle($thiz) {
-  var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = (262144 & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    $thiz.Lscalatags_JsDom$all$__f_padding = $ct_Lscalatags_generic_PixelStyle__T__T__(new $c_Lscalatags_generic_PixelStyle(), "padding", "padding");
-    var b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-    var lo = b$1.RTLong__f_lo;
-    var hi$1 = (262144 | b$1.RTLong__f_hi);
-    $thiz.Lscalatags_JsDom$all$__f_bitmap$1 = new $c_RTLong(lo, hi$1)
-  };
-  return $thiz.Lscalatags_JsDom$all$__f_padding
-}
 function $p_Lscalatags_JsDom$all$__fontFamily$lzycompute__Lscalatags_generic_Style($thiz) {
   var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
   var hi = (134217728 & b.RTLong__f_hi);
@@ -33563,30 +33438,6 @@ function $p_Lscalatags_JsDom$all$__fontFamily$lzycompute__Lscalatags_generic_Sty
     $thiz.Lscalatags_JsDom$all$__f_bitmap$1 = new $c_RTLong(lo, hi$1)
   };
   return $thiz.Lscalatags_JsDom$all$__f_fontFamily
-}
-function $p_Lscalatags_JsDom$all$__marginRight$lzycompute__Lscalatags_generic_StyleMisc$MarginAuto($thiz) {
-  var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = ((-2147483648) & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    $thiz.Lscalatags_JsDom$all$__f_marginRight = new $c_Lscalatags_generic_Styles$$anon$1($thiz);
-    var b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-    var lo = b$1.RTLong__f_lo;
-    var hi$1 = ((-2147483648) | b$1.RTLong__f_hi);
-    $thiz.Lscalatags_JsDom$all$__f_bitmap$1 = new $c_RTLong(lo, hi$1)
-  };
-  return $thiz.Lscalatags_JsDom$all$__f_marginRight
-}
-function $p_Lscalatags_JsDom$all$__marginLeft$lzycompute__Lscalatags_generic_StyleMisc$MarginAuto($thiz) {
-  var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$2;
-  var lo = (2 & b.RTLong__f_lo);
-  if ((lo === 0)) {
-    $thiz.Lscalatags_JsDom$all$__f_marginLeft = new $c_Lscalatags_generic_Styles$$anon$3($thiz);
-    var b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$2;
-    var lo$1 = (2 | b$1.RTLong__f_lo);
-    var hi = b$1.RTLong__f_hi;
-    $thiz.Lscalatags_JsDom$all$__f_bitmap$2 = new $c_RTLong(lo$1, hi)
-  };
-  return $thiz.Lscalatags_JsDom$all$__f_marginLeft
 }
 function $p_Lscalatags_JsDom$all$__width$lzycompute__Lscalatags_generic_StyleMisc$PixelAutoStyle($thiz) {
   var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$2;
@@ -33635,11 +33486,6 @@ function $p_Lscalatags_JsDom$all$__value$lzycompute__Lscalatags_generic_Attr($th
     $thiz.Lscalatags_JsDom$all$__f_bitmap$4 = new $c_RTLong(lo$1, hi)
   };
   return $thiz.Lscalatags_JsDom$all$__f_value
-}
-function $p_Lscalatags_JsDom$all$__borderCollapse$lzycompute$2__V($thiz) {
-  if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_borderCollapse$module === null)) {
-    $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_borderCollapse$module = new $c_Lscalatags_generic_Styles$borderCollapse$($thiz)
-  }
 }
 function $p_Lscalatags_JsDom$all$__color$lzycompute$2__V($thiz) {
   if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_color$module === null)) {
@@ -34149,12 +33995,6 @@ $c_Lscalatags_JsDom$all$.prototype.borderBottom__Lscalatags_generic_Style = (fun
     return this.Lscalatags_JsDom$all$__f_borderBottom
   }
 });
-$c_Lscalatags_JsDom$all$.prototype.borderCollapse__Lscalatags_generic_Styles$borderCollapse$ = (function() {
-  if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_borderCollapse$module === null)) {
-    $p_Lscalatags_JsDom$all$__borderCollapse$lzycompute$2__V(this)
-  };
-  return $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_borderCollapse$module
-});
 $c_Lscalatags_JsDom$all$.prototype.borderLeft__Lscalatags_generic_Style = (function() {
   var b = this.Lscalatags_JsDom$all$__f_bitmap$1;
   var hi = (1 & b.RTLong__f_hi);
@@ -34197,15 +34037,6 @@ $c_Lscalatags_JsDom$all$.prototype.height__Lscalatags_generic_StyleMisc$PixelAut
     return this.Lscalatags_JsDom$all$__f_height
   }
 });
-$c_Lscalatags_JsDom$all$.prototype.padding__Lscalatags_generic_PixelStyle = (function() {
-  var b = this.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = (262144 & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    return $p_Lscalatags_JsDom$all$__padding$lzycompute__Lscalatags_generic_PixelStyle(this)
-  } else {
-    return this.Lscalatags_JsDom$all$__f_padding
-  }
-});
 $c_Lscalatags_JsDom$all$.prototype.fontSize__Lscalatags_generic_Styles$fontSize$ = (function() {
   if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_fontSize$module === null)) {
     $p_Lscalatags_JsDom$all$__fontSize$lzycompute$2__V(this)
@@ -34219,24 +34050,6 @@ $c_Lscalatags_JsDom$all$.prototype.fontFamily__Lscalatags_generic_Style = (funct
     return $p_Lscalatags_JsDom$all$__fontFamily$lzycompute__Lscalatags_generic_Style(this)
   } else {
     return this.Lscalatags_JsDom$all$__f_fontFamily
-  }
-});
-$c_Lscalatags_JsDom$all$.prototype.marginRight__Lscalatags_generic_StyleMisc$MarginAuto = (function() {
-  var b = this.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = ((-2147483648) & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    return $p_Lscalatags_JsDom$all$__marginRight$lzycompute__Lscalatags_generic_StyleMisc$MarginAuto(this)
-  } else {
-    return this.Lscalatags_JsDom$all$__f_marginRight
-  }
-});
-$c_Lscalatags_JsDom$all$.prototype.marginLeft__Lscalatags_generic_StyleMisc$MarginAuto = (function() {
-  var b = this.Lscalatags_JsDom$all$__f_bitmap$2;
-  var lo = (2 & b.RTLong__f_lo);
-  if ((lo === 0)) {
-    return $p_Lscalatags_JsDom$all$__marginLeft$lzycompute__Lscalatags_generic_StyleMisc$MarginAuto(this)
-  } else {
-    return this.Lscalatags_JsDom$all$__f_marginLeft
   }
 });
 $c_Lscalatags_JsDom$all$.prototype.margin__Lscalatags_generic_Styles$margin$ = (function() {
