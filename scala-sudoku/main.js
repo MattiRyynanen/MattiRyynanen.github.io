@@ -1468,18 +1468,16 @@ function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__runRender$1__Lorg_scalaj
 }
 function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__takeRow$1__I__sci_List__Lscalatags_JsDom$TypedTag($thiz, row, cellViews$1) {
   var this$1 = $m_Lscalatags_JsDom$all$();
-  var $$x2 = this$1.tr__Lscalatags_JsDom$TypedTag();
-  var array = [$m_Lscalatags_JsDom$all$().height__Lscalatags_generic_StyleMisc$PixelAutoStyle().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("12ex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
-  var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
-  var this$7 = $m_Lscalatags_JsDom$all$();
+  var $$x1 = this$1.tr__Lscalatags_JsDom$TypedTag();
+  var this$4 = $m_Lscalatags_JsDom$all$();
   var n = $imul(9, row);
   var xs = $as_sci_List($p_sc_StrictOptimizedLinearSeqOps__loop$2__I__sc_LinearSeq__sc_LinearSeq(cellViews$1, n, cellViews$1)).take__I__sci_List(9);
-  var ev = new $c_sjsr_AnonFunction1(((this$5) => ((e$2) => {
-    var this$6 = $m_Lscalatags_JsDom$all$();
-    return new $c_Lscalatags_LowPriorityImplicits$bindNode(this$6, e$2)
+  var ev = new $c_sjsr_AnonFunction1(((this$2) => ((e$2) => {
+    var this$3 = $m_Lscalatags_JsDom$all$();
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode(this$3, e$2)
   }))($thiz));
-  var array$1 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$7, xs, ev)];
-  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$1))
+  var array = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$4, xs, ev)];
+  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array))
 }
 function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__colorForCand$1__I__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__T($thiz, cand, cell$1, prevCell$1) {
   var currentCandidate = cell$1.Lcom_mattiryynanen_scalasudoku_core_Cell__f_candidates.contains__O__Z(cand);
@@ -1490,13 +1488,15 @@ function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__candChar$1__I__Lcom_matt
 }
 function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__candidateView$1__I__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__Lscalatags_JsDom$TypedTag($thiz, cand, cell$1, prevCell$1) {
   var this$1 = $m_Lscalatags_JsDom$all$();
-  var $$x2 = this$1.td__Lscalatags_JsDom$TypedTag();
-  var array = [$m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__colorForCand$1__I__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__T($thiz, cand, cell$1, prevCell$1), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
-  var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
+  var $$x3 = this$1.td__Lscalatags_JsDom$TypedTag();
+  var array = [$m_Lscalatags_JsDom$all$().class__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("candidateCell", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+  var $$x2 = $$x3.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
+  var array$1 = [$m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__colorForCand$1__I__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__T($thiz, cand, cell$1, prevCell$1), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+  var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$1));
   $m_Lscalatags_JsDom$all$();
   var v = $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__candChar$1__I__Lcom_mattiryynanen_scalasudoku_core_Cell__Lcom_mattiryynanen_scalasudoku_core_Cell__T($thiz, cand, cell$1, prevCell$1);
-  var array$1 = [new $c_Lscalatags_JsDom$StringFrag(v)];
-  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$1))
+  var array$2 = [new $c_Lscalatags_JsDom$StringFrag(v)];
+  return $$x1.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$2))
 }
 function $p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T($thiz, thick) {
   return (thick ? "2px solid black" : "1px solid black")
@@ -1655,7 +1655,7 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
   if (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_givenInitial) {
     var this$1 = $m_Lscalatags_JsDom$all$();
     var $$x2 = this$1.div__Lscalatags_JsDom$TypedTag();
-    var array = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
+    var array = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("2em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle)];
     var $$x1 = $$x2.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array));
     $m_Lscalatags_JsDom$all$();
     var v = $uI(cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_candidates.head__O());
@@ -1665,7 +1665,7 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
   } else if (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_isSolved && prevCell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_isSolved) && cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_broadcasted)) {
     var this$10 = $m_Lscalatags_JsDom$all$();
     var $$x4 = this$10.div__Lscalatags_JsDom$TypedTag();
-    var array$2 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("green", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+    var array$2 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("2em", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("green", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
     var $$x3 = $$x4.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$2));
     $m_Lscalatags_JsDom$all$();
     var v$2 = $uI(cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_candidates.head__O());
@@ -1674,14 +1674,16 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
     var cellContent = $$x3.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$3))
   } else {
     var this$19 = $m_Lscalatags_JsDom$all$();
-    var $$x12 = this$19.table__Lscalatags_JsDom$TypedTag();
-    var array$4 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("3ex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("grey", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
-    var $$x11 = $$x12.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$4));
+    var $$x15 = this$19.table__Lscalatags_JsDom$TypedTag();
+    var array$4 = [$m_Lscalatags_JsDom$all$().fontSize__Lscalatags_generic_Styles$fontSize$().$colon$eq__O__Lscalatags_generic_PixelStyleValue__Lscalatags_generic_StylePair("2.5ex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringPixelStyle), $m_Lscalatags_JsDom$all$().color__Lscalatags_generic_Styles$color$().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("grey", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+    var $$x14 = $$x15.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$4));
     var this$23 = $m_Lscalatags_JsDom$all$();
-    var $$x10 = this$23.tbody__Lscalatags_JsDom$TypedTag();
+    var $$x13 = this$23.tbody__Lscalatags_JsDom$TypedTag();
     var this$24 = $m_Lscalatags_JsDom$all$();
-    var $$x9 = this$24.tr__Lscalatags_JsDom$TypedTag();
-    var this$30 = $m_Lscalatags_JsDom$all$();
+    var $$x12 = this$24.tr__Lscalatags_JsDom$TypedTag();
+    var array$5 = [$m_Lscalatags_JsDom$all$().class__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("candidateRow", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+    var $$x11 = $$x12.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$5));
+    var this$33 = $m_Lscalatags_JsDom$all$();
     var b = $m_sci_IndexedSeq$().newBuilder__scm_Builder();
     var it = new $c_sci_RangeIterator(1, 1, 3, false);
     while (it.sci_RangeIterator__f__hasNext) {
@@ -1690,13 +1692,15 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
       b.addOne__O__scm_Growable(elem)
     };
     var xs = $as_sci_IndexedSeq(b.result__O());
-    var this$29 = $m_s_$less$colon$less$();
-    var ev = this$29.s_$less$colon$less$__f_singleton;
-    var array$5 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$30, xs, ev)];
-    var $$x8 = $$x9.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$5));
-    var this$34 = $m_Lscalatags_JsDom$all$();
-    var $$x7 = this$34.tr__Lscalatags_JsDom$TypedTag();
-    var this$40 = $m_Lscalatags_JsDom$all$();
+    var this$32 = $m_s_$less$colon$less$();
+    var ev = this$32.s_$less$colon$less$__f_singleton;
+    var array$6 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$33, xs, ev)];
+    var $$x10 = $$x11.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$6));
+    var this$37 = $m_Lscalatags_JsDom$all$();
+    var $$x9 = this$37.tr__Lscalatags_JsDom$TypedTag();
+    var array$7 = [$m_Lscalatags_JsDom$all$().class__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("candidateRow", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+    var $$x8 = $$x9.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$7));
+    var this$46 = $m_Lscalatags_JsDom$all$();
     var b$1 = $m_sci_IndexedSeq$().newBuilder__scm_Builder();
     var it$1 = new $c_sci_RangeIterator(4, 1, 6, false);
     while (it$1.sci_RangeIterator__f__hasNext) {
@@ -1705,13 +1709,15 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
       b$1.addOne__O__scm_Growable(elem$1)
     };
     var xs$1 = $as_sci_IndexedSeq(b$1.result__O());
-    var this$39 = $m_s_$less$colon$less$();
-    var ev$1 = this$39.s_$less$colon$less$__f_singleton;
-    var array$6 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$40, xs$1, ev$1)];
-    var $$x6 = $$x7.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$6));
-    var this$44 = $m_Lscalatags_JsDom$all$();
-    var $$x5 = this$44.tr__Lscalatags_JsDom$TypedTag();
+    var this$45 = $m_s_$less$colon$less$();
+    var ev$1 = this$45.s_$less$colon$less$__f_singleton;
+    var array$8 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$46, xs$1, ev$1)];
+    var $$x7 = $$x8.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$8));
     var this$50 = $m_Lscalatags_JsDom$all$();
+    var $$x6 = this$50.tr__Lscalatags_JsDom$TypedTag();
+    var array$9 = [$m_Lscalatags_JsDom$all$().class__Lscalatags_generic_Attr().$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("candidateRow", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)];
+    var $$x5 = $$x6.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$9));
+    var this$59 = $m_Lscalatags_JsDom$all$();
     var b$2 = $m_sci_IndexedSeq$().newBuilder__scm_Builder();
     var it$2 = new $c_sci_RangeIterator(7, 1, 9, false);
     while (it$2.sci_RangeIterator__f__hasNext) {
@@ -1720,28 +1726,28 @@ $c_Lcom_mattiryynanen_scalasudoku_ui_MainApp$.prototype.viewCell__Lcom_mattiryyn
       b$2.addOne__O__scm_Growable(elem$2)
     };
     var xs$2 = $as_sci_IndexedSeq(b$2.result__O());
-    var this$49 = $m_s_$less$colon$less$();
-    var ev$2 = this$49.s_$less$colon$less$__f_singleton;
-    var array$7 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$50, xs$2, ev$2)];
-    var array$8 = [$$x8, $$x6, $$x5.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$7))];
-    var array$9 = [$$x10.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$8))];
-    var cellContent = $$x11.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$9))
+    var this$58 = $m_s_$less$colon$less$();
+    var ev$2 = this$58.s_$less$colon$less$__f_singleton;
+    var array$10 = [new $c_Lscalatags_JsDom$Cap$SeqFrag(this$59, xs$2, ev$2)];
+    var array$11 = [$$x10, $$x7, $$x5.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$10))];
+    var array$12 = [$$x13.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$11))];
+    var cellContent = $$x14.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$12))
   };
   var hl = $uI(highlight.apply__O__O(cell));
   var bg = ((hl === 1) ? "#ddf5ff" : ((hl === 2) ? "#abe7ff" : ((((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_block % 2) | 0) === 1) ? "white" : "antiqueWhite")));
   $m_sci_List$();
-  var array$10 = [$m_Lscalatags_JsDom$all$().borderTop__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_row % 3) | 0) === 0)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderRight__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_col === 8)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderBottom__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_row === 8)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderLeft__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_col % 3) | 0) === 0)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
-  var elems = $ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$10);
+  var array$13 = [$m_Lscalatags_JsDom$all$().borderTop__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_row % 3) | 0) === 0)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderRight__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_col === 8)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderBottom__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_row === 8)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().borderLeft__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair($p_Lcom_mattiryynanen_scalasudoku_ui_MainApp$__thickIf$1__Z__T(this, (((cell.Lcom_mattiryynanen_scalasudoku_core_Cell__f_col % 3) | 0) === 0)), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+  var elems = $ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$13);
   var borderStyle = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
-  var this$64 = $m_Lscalatags_JsDom$all$();
-  var $$x14 = this$64.td__Lscalatags_JsDom$TypedTag();
-  var this$67 = $m_Lscalatags_JsDom$all$();
-  var this$66 = $m_s_$less$colon$less$();
-  var ev$3 = this$66.s_$less$colon$less$__f_singleton;
-  var array$11 = [new $c_Lscalatags_generic_Util$SeqNode(this$67, borderStyle, ev$3), $m_Lscalatags_JsDom$all$().backgroundColor__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair(bg, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $as_Lscalatags_generic_Style($m_Lscalatags_JsDom$all$().textAlign__Lscalatags_generic_Styles$TextAlign()).$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
-  var $$x13 = $$x14.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$11));
-  var array$12 = [cellContent];
-  return $$x13.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$12)).render__Lorg_scalajs_dom_raw_Element()
+  var this$73 = $m_Lscalatags_JsDom$all$();
+  var $$x17 = this$73.td__Lscalatags_JsDom$TypedTag();
+  var this$76 = $m_Lscalatags_JsDom$all$();
+  var this$75 = $m_s_$less$colon$less$();
+  var ev$3 = this$75.s_$less$colon$less$__f_singleton;
+  var array$14 = [new $c_Lscalatags_generic_Util$SeqNode(this$76, borderStyle, ev$3), $m_Lscalatags_JsDom$all$().backgroundColor__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair(bg, $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $m_Lscalatags_JsDom$all$().fontFamily__Lscalatags_generic_Style().$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("monospace", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle), $as_Lscalatags_generic_Style($m_Lscalatags_JsDom$all$().textAlign__Lscalatags_generic_Styles$TextAlign()).$colon$eq__O__Lscalatags_generic_StyleValue__Lscalatags_generic_StylePair("center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringStyle)];
+  var $$x16 = $$x17.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$14));
+  var array$15 = [cellContent];
+  return $$x16.apply__sci_Seq__Lscalatags_JsDom$TypedTag($ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array$15)).render__Lorg_scalajs_dom_raw_Element()
 });
 var $d_Lcom_mattiryynanen_scalasudoku_ui_MainApp$ = new $TypeData().initClass({
   Lcom_mattiryynanen_scalasudoku_ui_MainApp$: 0
@@ -33415,18 +33421,6 @@ function $p_Lscalatags_JsDom$all$__borderTop$lzycompute__Lscalatags_generic_Styl
   };
   return $thiz.Lscalatags_JsDom$all$__f_borderTop
 }
-function $p_Lscalatags_JsDom$all$__height$lzycompute__Lscalatags_generic_StyleMisc$PixelAutoStyle($thiz) {
-  var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = (16384 & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    $thiz.Lscalatags_JsDom$all$__f_height = new $c_Lscalatags_generic_StyleMisc$PixelAutoStyle($thiz, "height", "height");
-    var b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
-    var lo = b$1.RTLong__f_lo;
-    var hi$1 = (16384 | b$1.RTLong__f_hi);
-    $thiz.Lscalatags_JsDom$all$__f_bitmap$1 = new $c_RTLong(lo, hi$1)
-  };
-  return $thiz.Lscalatags_JsDom$all$__f_height
-}
 function $p_Lscalatags_JsDom$all$__fontFamily$lzycompute__Lscalatags_generic_Style($thiz) {
   var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$1;
   var hi = (134217728 & b.RTLong__f_hi);
@@ -33486,6 +33480,18 @@ function $p_Lscalatags_JsDom$all$__value$lzycompute__Lscalatags_generic_Attr($th
     $thiz.Lscalatags_JsDom$all$__f_bitmap$4 = new $c_RTLong(lo$1, hi)
   };
   return $thiz.Lscalatags_JsDom$all$__f_value
+}
+function $p_Lscalatags_JsDom$all$__class$lzycompute__Lscalatags_generic_Attr($thiz) {
+  var b = $thiz.Lscalatags_JsDom$all$__f_bitmap$4;
+  var lo = (67108864 & b.RTLong__f_lo);
+  if ((lo === 0)) {
+    $thiz.Lscalatags_JsDom$all$__f_class = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr($thiz, "class", null, false);
+    var b$1 = $thiz.Lscalatags_JsDom$all$__f_bitmap$4;
+    var lo$1 = (67108864 | b$1.RTLong__f_lo);
+    var hi = b$1.RTLong__f_hi;
+    $thiz.Lscalatags_JsDom$all$__f_bitmap$4 = new $c_RTLong(lo$1, hi)
+  };
+  return $thiz.Lscalatags_JsDom$all$__f_class
 }
 function $p_Lscalatags_JsDom$all$__color$lzycompute$2__V($thiz) {
   if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_color$module === null)) {
@@ -34028,15 +34034,6 @@ $c_Lscalatags_JsDom$all$.prototype.color__Lscalatags_generic_Styles$color$ = (fu
   };
   return $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_color$module
 });
-$c_Lscalatags_JsDom$all$.prototype.height__Lscalatags_generic_StyleMisc$PixelAutoStyle = (function() {
-  var b = this.Lscalatags_JsDom$all$__f_bitmap$1;
-  var hi = (16384 & b.RTLong__f_hi);
-  if ((hi === 0)) {
-    return $p_Lscalatags_JsDom$all$__height$lzycompute__Lscalatags_generic_StyleMisc$PixelAutoStyle(this)
-  } else {
-    return this.Lscalatags_JsDom$all$__f_height
-  }
-});
 $c_Lscalatags_JsDom$all$.prototype.fontSize__Lscalatags_generic_Styles$fontSize$ = (function() {
   if (($m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_fontSize$module === null)) {
     $p_Lscalatags_JsDom$all$__fontSize$lzycompute$2__V(this)
@@ -34092,6 +34089,15 @@ $c_Lscalatags_JsDom$all$.prototype.value__Lscalatags_generic_Attr = (function() 
     return $p_Lscalatags_JsDom$all$__value$lzycompute__Lscalatags_generic_Attr(this)
   } else {
     return this.Lscalatags_JsDom$all$__f_value
+  }
+});
+$c_Lscalatags_JsDom$all$.prototype.class__Lscalatags_generic_Attr = (function() {
+  var b = this.Lscalatags_JsDom$all$__f_bitmap$4;
+  var lo = (67108864 & b.RTLong__f_lo);
+  if ((lo === 0)) {
+    return $p_Lscalatags_JsDom$all$__class$lzycompute__Lscalatags_generic_Attr(this)
+  } else {
+    return this.Lscalatags_JsDom$all$__f_class
   }
 });
 var $d_Lscalatags_JsDom$all$ = new $TypeData().initClass({
