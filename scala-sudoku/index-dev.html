@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sudoku solving with Scala</title>
+    <style>
+      table {
+        width: 100%;
+        table-layout: fixed;
+        max-width: 800px;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 0px;
+        padding: 0px;
+      }
+
+      tr { height: 12ex; }
+
+      tr .candidateRow { height: 4ex }
+
+      td { padding: 0px; }
+      td .candidateCell { border: 0px; width: 4ex; font-size: 110%;}
+
+      input {
+        width: 95%;
+        max-width: 800px;
+        text-align: center;
+        height: 2rem;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Include Scala.js compiled code -->
+    <script type="text/javascript" src="./target/scala-2.13/scala-sudoku-fastopt/main.js"></script>
+  </body>
+</html>
