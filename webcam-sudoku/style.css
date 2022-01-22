@@ -1,0 +1,51 @@
+.fullscreen {
+    font-family: helvetica, arial, sans-serif;
+    background: #2e2e2e;
+}
+
+.video-preview {
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(89, 92, 82);
+    display: block;
+}
+
+.overlay-canvas {
+    background-color: transparent;
+    position: absolute;
+    z-index: 200;
+}
+
+.sudoku-preview {
+    position: absolute;
+    z-index: 300;
+    background-color: #fdf5e83f
+}
+
+.hud-text {
+    color: aliceblue;
+    z-index: 500;
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.info-hud {
+    font-size: 20px;
+    width: 400px;
+    padding-left: 0px;
+    padding-right: 0px;
+    left: calc(50% - 200px);
+}
+
+.rec-button {
+    left: 0px;
+    background-color: rgba(161, 67, 23, 0.568);
+}
+
+.solution-button {
+    right: 0px;
+    background-color: rgba(0, 255, 0, 0.25)
+}
