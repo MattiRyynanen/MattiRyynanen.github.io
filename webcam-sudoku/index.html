@@ -11,8 +11,25 @@
     <canvas id="debugCanvas" class="overlay-canvas"></canvas>
     <canvas id="sudokuCanvas" class="sudoku-preview" width="252" height="252"></canvas>
     <p id="hudText" class="hud-text info-hud"></p>
-    <p id="recButton" class="hud-text rec-button" style="display: none;">Start recording</p>
+    <p id="recButton" class="hud-text rec-button" style="display: none;">Start camera</p>
     <p id="solutionButton" class="hud-text solution-button" style="display: none;">Show solution</p>
+
+    <div id="instructions" class="instructions">
+      <h1>Sudoku detection from web camera</h1>
+      Detects sudoku puzzles from web camera and recognizes the digits in the puzzle.
+      <ul>
+        <li>Click "Start camera" to start your web camera.</li>
+        <li>Show a sudoku puzzle to web camera.</li>
+        <li>When the puzzle digits are recognized, the detected puzzle is shown with its solution.</li>
+        <li>Click "Show solution" button if you want to see more detailed steps and techniques how to solve the puzzle.</li>
+        <li>Click "Stop camera" to stop recording at any time.</li>
+      </ul>
+      The detection runs on your web browser only. No data is sent or being collected.
+      <br>
+      <h2 onclick="document.getElementById('instructions').style.display='none'" style="background-color: aquamarine; text-align: center; border-radius: 20px; padding: 20px;">
+        Got it!
+      </h2>
+    </div>
 
     <!-- Import TensorFlow.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.2/math.js" integrity="sha512-U9fwz8ekKht5NdL1x4+Yh3DoXeSrsZ0M7ALcijykvrVKD+101nax1MVdc0wNSVh4GOwZGY7yQpz+rAnnoX7O3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

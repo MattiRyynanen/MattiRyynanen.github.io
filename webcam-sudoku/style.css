@@ -1,6 +1,7 @@
 .fullscreen {
     font-family: helvetica, arial, sans-serif;
     background: #2e2e2e;
+    margin: 0px;
 }
 
 .video-preview {
@@ -38,6 +39,19 @@
     padding-left: 0px;
     padding-right: 0px;
     left: calc(50% - 200px);
+}
+
+.instructions {
+    position: absolute;
+    background-color: bisque;
+    z-index: 600;
+    top: 10%;
+    border-radius: 10px;
+    margin: 60px;
+    padding: 30px;
+    height: auto;
+    width: auto;
+    font-size: 32px;
 }
 
 .rec-button {

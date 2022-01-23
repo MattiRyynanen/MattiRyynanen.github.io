@@ -504,6 +504,7 @@ class App {
             this.imageProcessor = null;
             this.recording = false;
             this.overlayCtx.clearRect(0, 0, this.overlay.width, this.overlay.height);
+            this.setRecButtonText("Start camera");
         }
     }
     processVideoFrame() {
@@ -594,6 +595,7 @@ class App {
     openStepsLink() {
         if (this.detectedDigits.length !== 81)
             return;
+        this.stopRecording();
         const digitsStr = this.detectedDigits.map(v => v > 0 ? v.toString() : '.').join('');
         const url = `https://mattiryynanen.github.io/scala-sudoku/index.html?puzzle=${digitsStr}`;
         console.log("Opening up", url);
@@ -606,14 +608,13 @@ class App {
     }
     recButtonClick() {
         if (this.recording) {
-            console.log("Already recording, stop");
             this.stopRecording();
-            this.setRecButtonText("Start camera");
         }
         else {
             this.resetResults();
             this.recording = true;
             App.show(this.hud.recButton, false);
+            App.show(getElement("instructions"), false);
             this.setRecButtonText("Stop camera");
             this.showHudText("Starting camera...");
             this.startRecording();
