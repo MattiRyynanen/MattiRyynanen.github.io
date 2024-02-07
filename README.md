@@ -24,6 +24,14 @@ An example of the Sudoku detector running on a mobile phone browser.
 * The red rectangular area shows the detected Sudoku puzzle from the web camera image.
 * The lower part shows the warped and segmented Sudoku puzzle with inferred digits with red and the numbers solving the puzzle with green.
 
+#### Shortest path finding with A* or Dijkstra ([demo](a-star-vs-dijkstra/index.html))
+
+<img src="readme-images/a-star-dijkstra.png" alt="drawing" width="70%">
+
+* The A* and Dijkstra algorithm for the shortest path finding implemented in C++.
+* Converted to [WebAssembly](https://webassembly.org/) with [Emscripten](https://emscripten.org/) toolchain.
+* A humble 2D visualization implemented with [SDL2](https://www.libsdl.org/).
+* Try it in your browser [here](a-star-vs-dijkstra/index.html)
 
 #### Drum chop tool
 
