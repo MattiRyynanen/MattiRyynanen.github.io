@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Emscripten-Generated Code</title>
+    <title>Shortest path finding with Dijkstra or A* - 3D demo</title>
     <style>
         .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
         textarea.emscripten { font-family: monospace; width: 80%; }
         div.emscripten { text-align: center; }
         div.emscripten_border { border: 1px solid black; }
+        div.container { position: absolute; right: 0px; left: 0px; top: 0px; bottom: 0px }
         /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
         canvas.emscripten { border: 0px none; background-color: black; }
 
@@ -47,17 +48,15 @@
     </style>
 </head>
 <body>
-<div style="margin-left: 10%; margin-right: 10%">
-    <h2>Shortest path finding with Dijkstra or A*</h2>
-</div>
-<hr/>
 <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
 <div class="emscripten" id="status">Downloading...</div>
 <div class="emscripten">
     <progress value="0" max="100" id="progress" hidden=1></progress>
 </div>
 <div class="emscripten_border">
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+    <div class="container" id="container">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+    </div>
 </div>
 
 <hr/>
@@ -94,6 +93,10 @@
             // See http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15.2
             canvas.addEventListener("webglcontextlost", (e) => { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
 
+            const container = document.getElementById("container");
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+
             return canvas;
         })(),
         setStatus: (text) => {
@@ -115,6 +118,7 @@
                 progressElement.max = null;
                 progressElement.hidden = true;
                 if (!text) spinnerElement.hidden = true;
+                window.dispatchEvent(new Event('resize'));
             }
             statusElement.innerHTML = text;
         },
@@ -133,16 +137,15 @@
         };
     };
 
-    /*
     const container = document.getElementById("container");
     Module.canvas.width = container.clientWidth;
     Module.canvas.height = container.clientHeight;
 
     window.addEventListener("resize", function (e) {
+        // console.log('from container:', container.clientWidth, container.clientHeight);
         Module.canvas.width = container.clientWidth;
         Module.canvas.height = container.clientHeight;
     }, true);
-     */
 </script>
 <script async type="text/javascript" src="index.js"></script>
 </body>
